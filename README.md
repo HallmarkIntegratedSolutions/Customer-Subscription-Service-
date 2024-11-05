@@ -222,11 +222,36 @@ Few subscribers started their subscriptions in September and November.
 -There were no Basic subscriptions in the month of February, April, June, August, October and December. 
 
 
+![Screenshot (79)~2](https://github.com/user-attachments/assets/003aec13-1568-4225-8f08-8b4549170501)
+
+- Approximately 50% of the total revenue for Basic subscription type was from the East region and the remaining 50% was from North region. 
+- There was no subscription cancellation from East region as further confirmed from the bar chart.
+- The total revenue for customers who cancelled their subscriptions is higher than the total revenue for customers who did not cancel their subscriptions for North region. 
+- The subscription duration for customers from the East is a little bit higher than those from the North. 
+
+----------
+
+- For Premium Subscription Type, 
+
+![sub 1 17~2](https://github.com/user-attachments/assets/c95b0d9b-f1bf-41ce-949d-72d9bc88fdca)
+
+- The total frequency of Subscriptions is 8,446 even as total frequency of cancelled subscriptions is 5,064 and total frequency of active subscriptions is 3,382.
+- The cancellation rate for Premium subscription type is 60% which is above average. 
+The reasons could be most of the customers who subscribed for Premium had a better expectation of the service they got and so they were not satisfied and had to cancel their subscriptions. 
+It is widely known that Premium offers are of higher costs than other offers generally.
+So the recommendation to service providers is that they should increase the efficiency delivered to Premium subscribers so they can enjoy what they pay for. 
+
+- All subscription cancellations for Premium (100%) was from South region 
+- Many subscribers started their subscriptions in  the month of February and June.
+Few subscribers started their subscriptions in October.
+- There were no Premium subscriptions in other months.
+
+![sub 1 18~2](https://github.com/user-attachments/assets/890cbaba-cd7c-4ae7-a6b7-861350c9110c)
+
+- 100% of the total revenue for Premium subscription type was from the South region. 
+- The total revenue for customers who cancelled their subscriptions is higher than the total revenue for customers who did not cancel their subscriptions. 
+- The subscription duration for customers who cancelled their subscriptions is almost same for those who did not. 
+
+-----------
 
 
-
-Approximately 50% of the total revenue for Basic subscription type was from the East region and the remaining 50% was from North region. 
-There was no subscription cancellation from East region as further confirmed from the bar chart.
-The total revenue for customers who cancelled their subscriptions is higher than the total revenue for customers who did not cancel their subscriptions for North region. 
-
-The subscription duration for customers from the East is a little bit higher than those from the North. 
