@@ -59,4 +59,51 @@ Basic subscription type returned the highest revenue of 33,776,735 while standar
 
 ## Data Analysis with MS EXCEL
 
+- Average Subscription Duration
+To calculate the average subscription duration, each customer subscription duration was calculated in a new column with the formula:
+
+```MICROSOFT EXCEL
+=F2-E2
+```
+
+Then the average of the subscription duration for all customers was calculated with the formula:
+
+```MICROSOFT EXCEL
+=AVERAGE(I2:I33788)
+```
+
+The average subscription duration is 365 days.
+
+---------------
+
+
+## Data Analysis with SQL
+
+- To calculate the total number of customers from each region
+
+```SQL
+select region, count(CustomerID) as Total_Number_of_Customers
+from [dbo].[CustomerSubscription]
+group by region
+order by 2 desc
+```
+![Sub 1 5~2](https://github.com/user-attachments/assets/c129ca4c-be94-4fb5-9349-7c9cf84f3b84)
+
+
+The region with the highest frequency of customers is East with 8,488 customers while West had the lowest frequency of customers with 8,420 customers. 
+
+------------
+
+- To calculate most popular subscription type by the number of customers
+```SQL
+select top 1 SubscriptionType, count(customerID) as Total_Number_of_Customers
+from [dbo].[CustomerSubscription]
+group by SubscriptionType
+```
+
+
+
+The most popular subscription type by number of customers is Basic with 16,921 subscriptions. 
+
+
 
