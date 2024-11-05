@@ -30,7 +30,7 @@ and identify key trends in cancellations and renewals.
 4. GitHub for Report Documentation
 ----------
 
-## Data Summarization with MS EXCEL
+## Data Summarization with EXCEL
 
 Customer data was summarized using pivot tables to find subscription patterns.
 
@@ -65,7 +65,7 @@ Basic subscription type returned the highest revenue of 33,776,735 while standar
 
 ------------
 
-## Data Analysis with MS EXCEL
+## Data Analysis with EXCEL
 
 - Average Subscription Duration
 To calculate the average subscription duration, each customer subscription duration was calculated in a new column with the formula:
