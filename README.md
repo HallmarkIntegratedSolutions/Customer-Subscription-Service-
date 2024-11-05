@@ -1,4 +1,20 @@
-# Customer Subscription Service
+# Project Title: Customer Subscription Service
+
+
+[Project Aim](#Project-Aim)
+
+[Tools Used](#Tools-Used)
+
+[Data Summarization with EXCEL](#Data-Summarization-with-EXCEL)
+
+[Data Analysis with EXCEL](#Data-Analysis-with-EXCEL)
+
+[Data Analysis with SQL](#Data-Analysis-with-SQL)
+
+[Data Visualization with POWER BI](#Data-Visualization-with-POWER-BI)
+
+[Conclusion](#Conclusion)
+
 
 ## Project Aim
 This project involves analyzing customer data for a subscription service to identify 
@@ -22,8 +38,6 @@ Customer data was summarized using pivot tables to find subscription patterns.
 
 ![Sub 1 1~2](https://github.com/user-attachments/assets/e9bddd03-88a1-404e-ac88-e009ea407f63)
 
-*fig 1: Total revenue per region*
-
 The region with the highest subscription revenue is East with 16,958,763 while the region with the lowest subscription revenue is North with 16,817,972. 
 
 ---------
@@ -31,8 +45,6 @@ The region with the highest subscription revenue is East with 16,958,763 while t
 #### Summarization of frequency (count) of customers by their subscription type
 
 ![Sub 1 2~2](https://github.com/user-attachments/assets/22ab5819-50da-4c98-9cab-a4dfd01cebbc)
-
-*fig 2: Frequency by Subscription Type*
 
 The most popular subscription type is Basic with 16,921 customers while the subscription type with the least customers is Standard with 8,420 customers. 
 
@@ -42,16 +54,12 @@ The most popular subscription type is Basic with 16,921 customers while the subs
 
 ![Sub 1 3~2](https://github.com/user-attachments/assets/c6c2ebc0-b27f-4b1a-ad31-8046d2ac4068)
 
-*fig 3: Frequency by Subscription Cancellation*
-
 Most of the customers (18,612) cancelled their subscription while 15,175 customers did not cancel their subscription
 
 
 #### Summarization of total subscription revenue per subscription type
 
 ![Sub 1 4~2](https://github.com/user-attachments/assets/48d88736-75e3-4a7f-ab9f-a32d6ba30ba3)
-
-*fig 4: Total revenue by Subscription Type*
 
 Basic subscription type returned the highest revenue of 33,776,735 while standard subscription type returned the lowest revenue of 16,864,376.
 
@@ -166,7 +174,6 @@ order by 2 desc
 ```
 ![Sub 1 11~2](https://github.com/user-attachments/assets/37d66260-9212-4617-a174-590ee7b1de26)
 
-
 The top 3 regions by subscription cancellation are North, South and West with 5067, 5064 and 5044 respectively. 
 
 ------------
@@ -208,9 +215,9 @@ Few subscribers started their subscriptions in September to December.
 
 -----------
 
-#### Subscription Type was used as slicer for the visual report.
+### Subscription Type was used as slicer for the visual report.
 
-- For Basic Subscription Type,
+#### For Basic Subscription Type
 
 ![Sub 1 15~2](https://github.com/user-attachments/assets/bfac0fbd-f36c-4f7b-8b62-c16435c43367)
 
@@ -231,7 +238,7 @@ Few subscribers started their subscriptions in September and November.
 
 ----------
 
-- For Premium Subscription Type, 
+#### For Premium Subscription Type
 
 ![sub 1 17~2](https://github.com/user-attachments/assets/c95b0d9b-f1bf-41ce-949d-72d9bc88fdca)
 
@@ -254,4 +261,28 @@ Few subscribers started their subscriptions in October.
 
 -----------
 
+#### For Standard Subscription Type
+
+![sub 1 19~2](https://github.com/user-attachments/assets/15bac0ff-9376-431b-a5ed-1902c86a6be6)
+
+- The total frequency of Subscriptions is 8,420 even as total frequency of cancelled subscriptionsis 5,044 and total frequency of active subscriptions is 3,376.
+- The cancellation rate for Standard subscription type is also 60% which is above average. 
+The reasons could be most of the customers who subscribed for Standard expected service to be of higher standard than what they got and so they were dissatisfied and had to cancel their subscriptions. 
+It is widely known that Standard offers are usually of high standard. 
+So the recommendation to service providers is that they should increase the standard of the service to Standard subscribers than the services offered to Basic Subscribers. 
+
+- All subscription cancellations for Standard subscription  type was from West region 
+-Many subscribers started their subscriptions in  the month of April and August.
+Few subscribers started their subscriptions in December.
+
+![Screenshot (82)~2](https://github.com/user-attachments/assets/86c5d5de-4c08-47e3-96a9-e315103d3ca0)
+
+- 100% of the total revenue for Standard subscription type was from the West region. 
+- The total revenue for customers who cancelled their subscriptions is higher than the total revenue for customers who did not cancel their subscriptions. 
+- There is no difference in the subscription duration for customers who cancelled their subscriptions and those who did not. 
+
+-------
+
+## Conclusion 
+Key findings have been identified after a thorough analysis of the customer subscription service and some notable recommendations have been made to the service providers. 
 
