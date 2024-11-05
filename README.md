@@ -131,5 +131,60 @@ select avg(SubscriptionDuration) as Average_Subscription_Duration from [dbo].[Cu
 
 The average subscription duration is 365 days.
 
+--------------
+
+- To find customers with subscription longer than 12 months
+
+```SQL
+select customerID from [dbo].[CustomerSubscription]
+where SubscriptionDuration >365
+```
+
+![Sub 1 9~2](https://github.com/user-attachments/assets/58e0deb4-1bd3-4200-90d2-6ac2a8350fe0)
+
+7 customers with distinct Customer ID have their subscriptions longer than 12 months.
+
+-----------
+
+- To calculate total revenue by subscription type
+
+```SQL
+select SubscriptionType, sum(Revenue) as Total_Revenue
+from [dbo].[CustomerSubscription]
+group by SubscriptionType
+order by 2 desc
+```
+
+![Sub 1 10~2](https://github.com/user-attachments/assets/1c033a50-9cc2-4ac8-9146-52082f2d072f)
 
 
+The subscription type with the highest total revenue is Basic with 33,776,735 while the subscription with the lowest total revenue is Standard with 16,864,376.
+
+--------------
+
+- To find the top 3 regions by subscription cancellations
+
+```SQL
+select top 3 region, count(customerID) as Total_Number_of_Customers from [dbo].[CustomerSubscription]
+where Canceled ='TRUE'
+group by region
+order by 2 desc
+```
+
+![Sub 1 11~2](https://github.com/user-attachments/assets/37d66260-9212-4617-a174-590ee7b1de26)
+
+
+The top 3 regions by subscription cancellation are North, South and West with 5067, 5064 and 5044 respectively. 
+
+------------
+
+- To find the total number of active and cancelled subscriptions
+
+```SQL
+select count(Canceled) as Total_Number_of_Active_and_Canceled_Subscription 
+from [dbo].[CustomerSubscription]
+```
+
+![Sub 1 12~2](https://github.com/user-attachments/assets/81e98f14-82ef-4458-a34a-8dd9dafe39a9)
+
+The total number of active and cancelled subscription is 33,787.
