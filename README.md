@@ -101,9 +101,35 @@ from [dbo].[CustomerSubscription]
 group by SubscriptionType
 ```
 
+![Sub 1 6~2](https://github.com/user-attachments/assets/04a7134d-a3c7-4326-b7e0-77d98ac489bf)
 
 
 The most popular subscription type by number of customers is Basic with 16,921 subscriptions. 
+
+-------------
+
+- To find customers who cancelled their subcscription within six months
+
+```SQL
+select customerID from [dbo].[CustomerSubscription]
+where Canceled='TRUE'and SubscriptionDuration between 1 and 180
+```
+
+![Sub 1 7~2](https://github.com/user-attachments/assets/3ac98097-26ba-49ea-81a4-daca3f46fb6b)
+
+None of the customers cancelled their subscription within six months. 
+
+-----------
+
+- To calculate the average subscription duration for all customers
+
+```SQL
+select avg(SubscriptionDuration) as Average_Subscription_Duration from [dbo].[CustomerSubscription]
+```
+
+![Sub 1 8~2](https://github.com/user-attachments/assets/fe34918f-9917-489d-bd6b-4506ef9a0bf1)
+
+The average subscription duration is 365 days.
 
 
 
