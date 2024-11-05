@@ -100,9 +100,7 @@ select top 1 SubscriptionType, count(customerID) as Total_Number_of_Customers
 from [dbo].[CustomerSubscription]
 group by SubscriptionType
 ```
-
 ![Sub 1 6~2](https://github.com/user-attachments/assets/04a7134d-a3c7-4326-b7e0-77d98ac489bf)
-
 
 The most popular subscription type by number of customers is Basic with 16,921 subscriptions. 
 
@@ -114,7 +112,6 @@ The most popular subscription type by number of customers is Basic with 16,921 s
 select customerID from [dbo].[CustomerSubscription]
 where Canceled='TRUE'and SubscriptionDuration between 1 and 180
 ```
-
 ![Sub 1 7~2](https://github.com/user-attachments/assets/3ac98097-26ba-49ea-81a4-daca3f46fb6b)
 
 None of the customers cancelled their subscription within six months. 
@@ -126,7 +123,6 @@ None of the customers cancelled their subscription within six months.
 ```SQL
 select avg(SubscriptionDuration) as Average_Subscription_Duration from [dbo].[CustomerSubscription]
 ```
-
 ![Sub 1 8~2](https://github.com/user-attachments/assets/fe34918f-9917-489d-bd6b-4506ef9a0bf1)
 
 The average subscription duration is 365 days.
@@ -139,7 +135,6 @@ The average subscription duration is 365 days.
 select customerID from [dbo].[CustomerSubscription]
 where SubscriptionDuration >365
 ```
-
 ![Sub 1 9~2](https://github.com/user-attachments/assets/58e0deb4-1bd3-4200-90d2-6ac2a8350fe0)
 
 7 customers with distinct Customer ID have their subscriptions longer than 12 months.
@@ -154,7 +149,6 @@ from [dbo].[CustomerSubscription]
 group by SubscriptionType
 order by 2 desc
 ```
-
 ![Sub 1 10~2](https://github.com/user-attachments/assets/1c033a50-9cc2-4ac8-9146-52082f2d072f)
 
 
@@ -170,7 +164,6 @@ where Canceled ='TRUE'
 group by region
 order by 2 desc
 ```
-
 ![Sub 1 11~2](https://github.com/user-attachments/assets/37d66260-9212-4617-a174-590ee7b1de26)
 
 
@@ -184,7 +177,56 @@ The top 3 regions by subscription cancellation are North, South and West with 50
 select count(Canceled) as Total_Number_of_Active_and_Canceled_Subscription 
 from [dbo].[CustomerSubscription]
 ```
-
 ![Sub 1 12~2](https://github.com/user-attachments/assets/81e98f14-82ef-4458-a34a-8dd9dafe39a9)
 
-The total number of active and cancelled subscription is 33,787.
+The total number of active and cancelled subscriptions is 33,787.
+
+------------------
+
+## Data Visualization with POWER BI
+
+![Sub 1 13~2](https://github.com/user-attachments/assets/8e229136-a661-4b0d-86ac-a35e7c468d39)
+
+
+- The total frequency of Subscriptions is 33,787 even as the total frequency of cancelled subscriptions is 15,175 and total frequency of active subscriptions is 18,612.
+- Overall, there was 45% subscription cancellation rate. 
+- Though a slight difference occured in the cancellation rate per region, North region had the highest cancellation rate of 33.39%.
+- There was no subscription cancellation from East region probably they enjoyed the service obtained from the subscription channels.
+
+The recommendation here is that the service providers  should inculcate the methods used for subscribers at the East region into other regions too so that subscribers from other regions would not need to cancel their subscription.
+- Many subscribers started their subscriptions in  the month of January, it reduced in February but rose up at March and was stationary till August.
+Few subscribers started their subscriptions in September to December.
+
+
+![Sub 1 14~2](https://github.com/user-attachments/assets/67ccd953-1eee-4dc1-bacb-000bde75d480)
+
+- The highest percentage (25.11%) of the total revenue for subscriptions was from the East region while the lowest was from North region. 
+- There was no subscription cancellation from East region as further confirmed from the bar chart.
+- The total revenue for customers who cancelled their subscriptions is higher than the total revenue for customers who did not cancel their subscriptions for North, West and South regions. 
+
+- The subscription duration for customers who cancelled their subscriptions and those who did not cancel their subscriptions are almost the same across all regions.
+
+-----------
+
+#### Subscription Type was used as slicer for the visual report.
+
+- For Basic Subscription Type,
+
+![Sub 1 15~2](https://github.com/user-attachments/assets/bfac0fbd-f36c-4f7b-8b62-c16435c43367)
+
+- The total frequency of Subscriptions is 16,921 even as the total frequency of cancelled subscriptions is 5,067 and total frequency of active subscriptions is 11,854.
+- The cancellation rate for Basic subscription type is 30% which is the lowest.
+- All the subscription cancellations for Basic only came from the North region (see fig 8) 
+- Many subscribers started their subscriptions in  the month of January to July.
+Few subscribers started their subscriptions in September and November.
+-There were no Basic subscriptions in the month of February, April, June, August, October and December. 
+
+
+
+
+
+Approximately 50% of the total revenue for Basic subscription type was from the East region and the remaining 50% was from North region. 
+There was no subscription cancellation from East region as further confirmed from the bar chart.
+The total revenue for customers who cancelled their subscriptions is higher than the total revenue for customers who did not cancel their subscriptions for North region. 
+
+The subscription duration for customers from the East is a little bit higher than those from the North. 
